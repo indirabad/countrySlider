@@ -1,0 +1,30 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../images/slider-icons.svg");
+}
+.icon-check {
+  width: 26px;
+  height: 26px;
+  background-position: 0 0;
+}
+.icon-chevron-down {
+  width: 26px;
+  height: 26px;
+  background-position: -46px 0;
+}
+.icon-chevron-up {
+  width: 26px;
+  height: 26px;
+  background-position: -92px 0;
+}
+.icon-angle-left {
+  width: 10px;
+  height: 26px;
+  background-position: 0 -46px;
+}
+.icon-angle-right {
+  width: 9px;
+  height: 26px;
+  background-position: -46px -46px;
+}

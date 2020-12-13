@@ -1,0 +1,10 @@
+h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 53px;
+  @media (max-width: 767px) {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Slider Mailfit</title>
+    <meta name="description" content="lider MAilfit" />
+    <meta name="keywords" content="lider MAilfit" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div id="countries-slider">
+      <div class="container">
+        <div class="slider-title">
+          <h1>Наши направления</h1>
+          <ul class="country-filter-desktop mobile-hidden">
+            <li class="active" data-id="all">Все страны</li>
+            <li data-id="it">Италия</li>
+            <li data-id="de">Германия</li>
+            <li data-id="gr">Греция</li>
+            <li data-id="tr">Турция</li>
+            <li data-id="is">Испания</li>
+            <li data-id="pt">Португалия</li>
+          </ul>
+          <button type="button" class="btn btn-filter-mobile">
+            Все направления
+          </button>
+          <ul class="country-filter-mobile desktop-hidden">
+            <li class="active" data-id="all">Все направления</li>
+            <li data-id="it">Италия</li>
+            <li data-id="de">Германия</li>
+            <li data-id="gr">Греция</li>
+            <li data-id="tr">Турция</li>
+            <li data-id="is">Испания</li>
+            <li data-id="pt">Португалия</li>
+          </ul>
+        </div>
+      </div>
+      <div class="slider-wrapper">
+        <div class="swiper-container">
+          <div id="countriesWrapper" class="swiper-wrapper">
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </body>
+</html>

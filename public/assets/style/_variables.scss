@@ -1,0 +1,21 @@
+$font-folder: "../fonts/";
+$img-folder: "../images/";
+
+@mixin background-property($imgpath, $bg-position: center) {
+  background: transparent url(#{$imgpath}) $bg-position;
+}
+
+%slider-icon-property {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../images/slider-icons.svg");
+}
+
+/* colors */
+
+$c-primary: #80a0f2;
+$c-blue: #4f73cd;
+$c-white: #ffffff;
+$c-deep-blue: #0047ff;
+$c-active-blue: #3259b9;
+$c-dark-blue: #254595;

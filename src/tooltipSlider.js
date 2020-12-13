@@ -22,7 +22,7 @@ const calculatePlacement = (elementIndex, slideIndex, slidesPerView, count) => {
 };
 
 export const hideAllTooltips = () => {
-  $(".country-tooltip").hide(300, function () {
+  $(".country-tooltip").fadeOut(500, function () {
     $(this).remove();
   });
 };
@@ -99,7 +99,7 @@ const createTooltip = (element) => {
   divText.appendChild(p);
   divText.appendChild(a);
   $(btnClose).on("click", () => {
-    $(tooltip).hide(500, () => {
+    $(tooltip).fadeOut(500, () => {
       $(tooltip).remove();
     });
   });
@@ -139,7 +139,6 @@ const showTooltip = (swiper, element) => {
         .height("318px")
         .css("margin", "0 10px");
       $swiperContainer.append(tooltip);
-      $(tooltip).show(300);
       break;
     case Placement.bottom:
       $(tooltip)
@@ -150,7 +149,6 @@ const showTooltip = (swiper, element) => {
         .height("317px")
         .css("margin", "0 10px");
       $swiperContainer.append(tooltip);
-      $(tooltip).show(300);
       break;
     default:
       $(tooltip)
@@ -161,8 +159,7 @@ const showTooltip = (swiper, element) => {
         .height("482px")
         .css("margin", "0 15px");
       $swiperContainer.append(tooltip);
-      $(tooltip).show(300);
       break;
   }
-  $(tooltip).show();
+  $(tooltip).fadeIn(500).show();
 };

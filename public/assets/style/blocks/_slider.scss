@@ -349,6 +349,10 @@
         position: absolute;
         bottom: 17px;
         left: 12px;
+        display: none;
+        @media (max-width: 991px) {
+          display: block;
+        }
       }
     }
 
